@@ -21,7 +21,7 @@ class Customer:
     def insert_sorted(self, c: Customer):
         if data.is_before(c):
             if left.insert_sorted(c):
-                left = treenode(c)
+                left = TreeNode(c)
         else:
             if right.insert_sorted(c):
-                right = treenode(c)
+                right = TreeNode(c)
