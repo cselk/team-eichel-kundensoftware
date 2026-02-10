@@ -1,4 +1,4 @@
-from treenode import TreeNode
+from leaf import Leaf
 
 
 class BinTree:
