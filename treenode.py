@@ -11,4 +11,10 @@ class TreeNode:
         pass
 
     def search_by_key(self, key: str):
-        pass
+        if self.get_data().get_last_name() == key:
+            return self.get_data()
+        else:
+            if self.get_data().is_before_key(key):
+                return self.left.search_by_key(key)
+            else:
+                return self.right.search_by_key(key)
