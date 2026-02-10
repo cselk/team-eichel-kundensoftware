@@ -7,4 +7,3 @@ class Leaf:
         return True
     def search_by_key(self,str):
         pass
-    
