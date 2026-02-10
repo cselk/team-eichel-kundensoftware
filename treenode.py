@@ -12,9 +12,13 @@ class TreeNode:
         if self.data.is_before(c):
             if self.left.insert_sorted(c):
                 self.left = TreeNode(c)
+                self.left.left = Leaf()
+                self.left.right = Leaf()
         else:
             if self.right.insert_sorted(c):
                 self.right = TreeNode(c)
+                self.right.left = Leaf()
+                self.right.right = Leaf()
 
     def search_by_key(self, key: str):
         if self.get_data().get_last_name() == key:
