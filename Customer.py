@@ -11,7 +11,8 @@ class Customer:
     def get_last_name(self):
         return self.last_name
     
-    def is_before(self, c:Customer):
+    def is_before(self, c):
         return self.is_before_key(c.get_last_name())
+    
     def is_before_key(self, key:str):
         return key < self.last_name
