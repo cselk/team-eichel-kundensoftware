@@ -2,8 +2,8 @@ from treenode import TreeNode
 
 
 class BinTree:
-    def __init__(self, data):
-        self.root = TreeNode(data)
+    def __init__(self):
+        self.root = Leaf()
 
     def inser_sorted(self, customer):
         self.root.insert_sorted(customer)
