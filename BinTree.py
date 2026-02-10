@@ -1,3 +1,5 @@
+from treenode import TreeNode
+
 class BinTree:
   def __init__(self):
     self.root = TreeNode()
