@@ -1,8 +1,9 @@
+from leaf import Leaf
 class TreeNode:
     def __init__(self, data):
         self.data = data
-        self.right = None
-        self.left = None
+        self.right = Leaf()
+        self.left = Leaf()
 
     def get_data(self):
         return self.data
