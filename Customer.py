@@ -16,3 +16,12 @@ class Customer:
     
     def is_before_key(self, key:str):
         return key < self.last_name
+    
+    #das in tree node einfügen
+    def insert_sorted(self, c: Customer):
+        if data.is_before(c):
+            if left.insert_sorted(c):
+                left = treenode(c)
+        else:
+            if right.insert_sorted(c):
+                right = treenode(c)
